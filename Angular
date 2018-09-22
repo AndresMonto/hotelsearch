@@ -1,0 +1,60 @@
+1. Instalación Node JS
+Version LTS o de larga duración
+Descargar Version Node JS desde el sitio web oficial
+Al realizar la instalación NPM (Manejador de paquetes de node JS)
+
+
+Plus
+Angular Console
+
+node --version
+npm --version
+
+
+ng --version
+
+
+-----------------------------------------------------------------------------------------------
++  Para instalar en Cloud 9             													  +
+-  nvm install 8                        													  -
++  ng serve --host 0.0.0.0 --port 8080 --disableHostCheck                                     + 
+-----------------------------------------------------------------------------------------------
+
+2. Instalar Angular 5
+Angular Cli - Herramienta de interaz de linea de comando, para generar componentes, compilar y empaquetar
+
+Paso 0. Instalar la última versión de NodeJS, para eso entraremos a su web oficial y descargaremos el instalador más actualizado https://nodejs.org/es/
+
+Paso 1. Desinstalar los paquetes anteriores de Angular CLI el @ significa que lo instale de manera global
+
+npm uninstall -g angular-cli
+npm uninstall -g @angular/cli
+
+Paso 2. Vaciar la caché del gestor de paquetes npm
+
+npm cache clean
+
+Paso 3. Instalar la última versión de Angular CLI
+
+npm install -g @angular/cli@latest
+
+
+Ahora ya tenemos actualizado Angular CLI y ya podemos generar un nuevo proyecto de Angular 5
+
+ng new NOMBRE_DEL_PROYECTO_ANGULAR5
+cd new NOMBRE_DEL_PROYECTO_ANGULAR5
+ng serve
+
+
+2.1 Instalar Visual Studio Code
+
+3. Que es un componente en Angular
+
+En angular la mayoria son componentes, son funcionalidades internas, que principalmente llaman a una vista
+
+Los decoradores permiten cargan attributos
+
+4. Crear componentes
+
+ng generate c compo/header --spec=false
+--spect=false que no genere pruebas unitarias
